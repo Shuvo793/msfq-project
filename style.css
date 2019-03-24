@@ -1,0 +1,31 @@
+.header{
+    height: 120px;
+    background:rgba(132,8,10,0.91);
+    color:white;
+}
+.footer{
+    height: 120px;
+    background:rgba(132,8,10,0.91);
+    color:white;
+}
+.main{
+    width:1100px;
+    border:thin solid silver;
+    overflow: hidden;
+    height:auto;
+    background-color:black;
+
+}
+.menu{
+    width:240px;
+    min-height: 400px;
+    background-color:silver;
+    float: left;
+}
+.content {
+    width: 833px;
+    min-height: 400px;
+    background-color: rgba(212,106,108,0.82);
+    float: right;
+    padding-left: 19px;
+}
