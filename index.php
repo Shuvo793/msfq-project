@@ -1,45 +1,19 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>our website</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<div class="header">
-    Us soft Web dev2
-</div>
-<div class="main">
-    <div class="menu">
-        <a href="">Home</a>
-        <a href="?p=products">Products</a>
-        <a href="?p=service">Service</a>
-        <a href="?p=contact">Contact</a>
-    </div>
-    <div class="content">
-        <?php
-        if(isset($_GET['p'])){
-            if(file_exists("pages/".$_GET['p'].".php")){
-                include ("pages/".$_GET['p'].".php");
-            }else{
-                foreach ($_SERVER as $key => $value){
-                    echo "$key = $value <br/>";
-                }
-            }
+<?php
+function add($a,$b){
+    $c=$a+$b;
+    return $c;
 
-        }else{
-            echo "this is a home page";
-        }
-        ?>
 
-    </div>
-</div>
-<div class="footer">
-    copyright @ussoft <?php print date('Y'); ?>
-</div>
+}
+$a1=add(10,10);
+$a2=add(10,10);
+$a3=add(10,10);
+$a4=add(10,10);
 
-</body>
-</html>
+$x=add($a1,$a2);
+$y=add($a3,$a4);
+$z=add($x,$y);
+
+echo $z;
+
+
