@@ -1,19 +1,33 @@
-<?php
-function add($a,$b){
-    $c=$a+$b;
-    return $c;
+<?PHP
 
+class Human{
+    public $name;
+    function sayHi(){
+        echo "salam\n";
+        $this->sayName();
+    }
+    function sayName(){
+        echo "My name is {$this->name}\n";
+    }
+}
+class Cat{
+    function sayHi(){
+        echo "Mew\n";
+    }
+}
+class dog{
+    function sayHi(){
+        echo "woof\n";
+    }    
 
 }
-$a1=add(10,10);
-$a2=add(10,10);
-$a3=add(10,10);
-$a4=add(10,10);
-
-$x=add($a1,$a2);
-$y=add($a3,$a4);
-$z=add($x,$y);
-
-echo $z;
-
+$human1 = new Human();
+$human1-> name="shuvo";
+$human1->sayHi();
+$human2=new Human();
+$human2-> name="moin";
+$human2->sayHi();
+$human3=new Human();
+$human3-> name="maria";
+$human3->sayHi();
 
